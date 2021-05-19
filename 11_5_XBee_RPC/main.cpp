@@ -37,7 +37,7 @@ int main(){
    reply_messange(xbee_reply, "setting MY : 0x210");
    xbee.write("ATDL 0x110\r\n", 12);
    reply_messange(xbee_reply, "setting DL : 0x110");
-   xbee.write("ATID 0x110\r\n", 10);
+   xbee.write("ATID 0x1\r\n", 10);
    reply_messange(xbee_reply, "setting PAN ID : 0x1");
 
    xbee.write("ATWR\r\n", 6);
